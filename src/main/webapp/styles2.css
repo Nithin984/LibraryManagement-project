@@ -1,0 +1,191 @@
+:root{
+    --dark_blue:hsl(228, 100%, 10%);
+    --border_radius:12px;
+}
+*{
+  
+	font-weight: 500;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0 12px;
+    font-family: 'Arimo', sans-serif;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+            background-image:url("https://images.wallpaperscraft.com/image/single/library_books_reading_125466_1920x1080.jpg");
+         background-repeat: no-repeat;
+    background-size: cover;
+	
+	animation: gradient 15s ease infinite;
+}
+.parent{
+    width: 50%;
+    position: relative;
+  
+}
+.child_2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -7px;
+    right: 60px;
+    margin-top: -40px;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 12px 76px 12px 12px;
+    color: white;
+    padding: 7px 9px;
+    font-size: 21px;
+    text-transform: uppercase;
+    border: 3px solid ;
+    backdrop-filter: blur(315px);
+
+}
+
+.child_2 p{
+    color: #E94F6F;
+    font-weight: bold;
+    word-spacing: 3px;
+}
+
+
+.h1-container{
+    text-transform: uppercase;
+    font-size: 14px;
+    margin:-20px -23px 40px -23px;
+    padding: 10px;
+    text-align: center;
+    background-color:var(--dark_blue);
+    color: white;
+    font-weight: 600;
+    border-radius: var(--border_radius) var(--border_radius) 0 0;
+    position: relative;
+
+}
+.h1-container a{
+    position: absolute;
+    top: -25px;
+    right: 97px;
+    color: white;
+    font-weight: bold;
+}
+
+.form-container{
+
+    
+    padding: 20px;
+    border: 3px solid var(--dark_blue);
+    border-radius: var(--border_radius);
+    position: relative;
+    background-color: white;
+    box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.3);
+}
+
+input{
+    font-size: 21px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid hsla(174, 10%, 67%, 1);
+    border-radius: 8px;
+
+   
+}
+input:focus{
+    outline-color: var(--dark_blue);
+}
+.container-box{
+    position: relative;
+    margin: auto;
+    width:60%;
+    margin-bottom: 40px;
+}
+
+.container-box label{
+    position: absolute;
+    left:10px;
+    top: 12px;
+    color: hsla(174, 10%, 67%, 1);
+    pointer-events: none;
+    transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+button{
+    padding: 10px 10%;
+    border:none;
+    background-color: var(--dark_blue);
+    border-radius: 17px;
+    cursor: pointer;
+    display: block;
+    margin:-12px auto;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: all 0.8s;
+    font-size: 14px;
+
+
+}
+button:hover{
+    background-color: #EA546C;
+    transform: scale(1.1);
+}
+a{
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: hsla(174, 10%, 67%, 1);
+    transition: all 0.9s ease;
+
+}
+
+a:hover{
+    color: var(--dark_blue);
+    
+}
+a:active{
+    color: #e73c7e;
+}
+input:focus + label, input:valid + label{
+    top:-26px;
+    font-size: 15px;
+    color: var(--dark_blue);
+}
+i{
+    transition: all 0.1s;
+}
+a:hover  i{
+    translate: 5px 0;
+
+}
+
+
+@media only screen and (max-width: 884px) {
+    body{
+        padding: 0 12px 0 22px;
+    }
+    
+    .h1-container{
+        font-size: 10px;
+    }
+    .parent{
+        width: 100%;
+    }
+    .container-box{
+        width: 91%;
+    }
+    .child_2{
+        font-size: 15px;
+        padding: 13px;
+        right: 20px;
+    }
+    .h1-container a{
+        right: 60px;
+
+    }
+   
+  }

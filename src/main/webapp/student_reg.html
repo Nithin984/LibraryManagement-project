@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/11bc3c9fe9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="child_2">
+        <p>Student Registration</p>
+        <p>
+            <small><a href="index.html">
+                <i class="fa-solid fa-person-walking-arrow-right"></i>
+                Exit
+            </a></small>
+        </p>
+    </div>
+    <div class="parent">
+        <div class="form-container">
+            <header class="h1-container">
+                <h1>Ineuron library management system</h1>
+            </header>
+            <form  method="post" action="./registration/student">
+                <div class="container-box">
+                    <input type="text" name="name"required >
+                    <label for="">Name*</label>
+                </div>
+                <div class="container-box">
+                    <input type="text" name="email" required >
+                    <label for="">Email*</label>
+                </div>
+                <div class="container-box">
+                    <input type="password" name="password"required>
+                    <label for="">password*</label>
+                </div>
+                
+                <div class="container-box">
+                    <select name="branch" id="branch">
+                        <option value="EEE" >EEE</option>
+                        <option value="CSE" selected>CSE</option>
+                        <option value="MECH">MECH</option>
+                        <option value="CIVIL">CIVIL</option>
+                        <option value="IT">IT</option>
+
+                    </select>
+                </div>
+                 <div class="container-box">
+                    <input type="number" name="conno"required>
+                    <label for="">contact no:*</label>
+                </div>
+                <div class="container-box">
+                    <button type="submit">Sign Up</button>
+                </div>
+
+                
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

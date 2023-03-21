@@ -1,0 +1,50 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/11bc3c9fe9.js" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>update student</title>
+</head>
+<body>
+    <!-- issue book form available here  -->
+    <div class="margin-lt remove-margin-lt">
+        <div class="col white-bg">
+            <h1 class="header header-x">
+                Update Student
+                <a onclick="history.back()"><i class="fa-solid fa-xmark"></i></a>
+            </h1>
+            <!-- -------------------------Your Code Goes Hear ----------------------------------------------------------------------->
+            <form method="post" action="./ManageStudent/updateform">
+            <div class="place-it">
+                <input type="text" id="student" name="Student id" required>
+                <label for="number" >Student id</label>
+              </div>
+              <div class="place-it">
+                <input type="text" id="student" name="Student Name" required>
+                <label for="student" >Student Name</label>
+              </div>
+              <div class="place-it">
+                <input type="text" id="student" name="Branch Name" required>
+                <label for="student">Branch Name</label>
+              </div>
+                  <div class="place-it">
+                <input type="text" id="student" name="Conno" required>
+                <label for="number">Contact no</label>
+              </div>  
+                <div class="place-it">
+                <input type="text" id="student" name="email" required>
+                <label for="student">Email</label>
+              </div>
+              <button class="btn d-block issue_btn">Update Student</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
